@@ -15,20 +15,11 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-            @include('layouts.navigation')
-
-            <!-- Page Heading -->
-            @isset($header)
-                <header class="bg-white dark:bg-gray-800 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endisset
-
+        <div class="min-h-screen bg-gray-50 dark:bg-gray-900"> <!-- Asegúrate de que el color del fondo coincida con el sidebar -->
+            <x-sidebar />
+    
             <!-- Page Content -->
-            <main>
+            <main class="min-h-screen sm:rounded-l-3xl bg-gray-200 dark:bg-gray-900 ml-0 sm:ml-16 p-4"> <!-- Aplica bordes redondeados y ajusta el margen -->
                 {{ $slot }}
             </main>
         </div>
