@@ -5,10 +5,11 @@
                 <x-sidebar-button />
             </div>
             <div class="flex items-center">
-                <div class="flex items-center">
+                <div class="flex items-center pr-3">
                     <x-dropdown-avatar />
                 </div>
             </div>
         </div>
     </div>
+    <x-breadcrumb />
 </nav>

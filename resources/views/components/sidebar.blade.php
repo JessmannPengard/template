@@ -9,7 +9,7 @@
     <div class="h-full flex flex-col justify-between py-4 overflow-y-auto bg-green-800 dark:bg-zinc-950">
         {{-- Logo de la aplicación --}}
         <a href="#" class="flex justify-center">
-            <x-application-logo class="h-6 sm:h-10" />
+            <x-application-logo class="h-10" />
         </a>
         {{-- Menu de la aplicación --}}
         <ul class="space-y-8 font-medium">
@@ -50,8 +50,9 @@
         {{-- Footer del Sidebar --}}
         <a href="#" class="flex flex-col justify-center py-3">
             <x-theme-toggler />
-            <p class="text-[8px] text-center text-gray-300 dark:text-white">powered by</p>
-            <p class="text-[10px] text-center font-bold text-white dark:text-green-400">Some&CO2</p>
+            <p class="text-[8px] text-center text-gray-300 dark:text-white">developed by</p>
+            <p class="text-[10px] text-center font-bold text-white dark:text-green-400">Jessmann</p>
+            <p class="text-[8px] text-center text-gray-300 dark:text-white">©{{ date('Y') }}</p>
         </a>
     </div>
 </aside>
