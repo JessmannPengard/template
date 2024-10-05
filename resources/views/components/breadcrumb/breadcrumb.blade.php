@@ -1,5 +1,5 @@
 <nav class="pl-10 sm:pl-5" aria-label="Breadcrumb">
-    <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+    <ol class="inline-flex items-center rtl:space-x-reverse">
         <li class="inline-flex items-center">
             <a href="{{ route('home') }}"
                 class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
@@ -18,7 +18,7 @@
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="m1 9 4-4-4-4" />
                 </svg>
-                <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Dashboard</span>
+                <span class="text-sm font-medium text-gray-500 dark:text-gray-400">Dashboard</span>
             </div>
         </li>
     </ol>

@@ -15,8 +15,10 @@
 <!-- Dropdown menu -->
 <div id="dropdownAvatarName"
     class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-zinc-950 dark:divide-gray-600">
-    <div class="w-full text-center px-4 py-3 text-sm text-gray-900 dark:text-white">
-        <div class="truncate">{{ Auth::user()->email }}</div>
+    <div class="py-2">
+        <a href="{{ route('profile.edit') }}"
+            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Mi
+            perfil</a>
     </div>
     <div class="py-2">
         <form method="POST" action="{{ route('logout') }}">
